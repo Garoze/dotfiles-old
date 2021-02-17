@@ -1,1 +1,3 @@
 # dotfiles
+
+Archlinux + bspwm
