@@ -1,6 +1,6 @@
 #~/.dotfiles
 ---
-**OS**: Arch Linux x86_64
+**OS**: Arch Linux x86_64<br>
 **Host**: Inspiron 5566
 **Kernel**: 5.10.16-arch1-1
 **Packages**: 750 (pacman)
