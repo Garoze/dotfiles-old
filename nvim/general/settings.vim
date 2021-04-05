@@ -8,8 +8,17 @@
 " Author: Garoze (.Dev)
 " Repository: https://github.com/Garoze/dotfiles
 
+autocmd BufNewFile,BufRead *.s,*.S set filetype=ia64
+
+autocmd BufNewFile,BufRead *.jsx set filetype=javascriptreact
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 autocmd FileType * set formatoptions-=cro
 autocmd BufWritePre * %s/\s\+$//e
+
 set encoding=UTF-8
 set iskeyword+=-
 set iskeyword+=_
@@ -23,7 +32,6 @@ set smartindent
 set cursorline
 set number
 set relativenumber
-set guicursor=
 set noerrorbells
 set nohlsearch
 set hidden
@@ -34,9 +42,10 @@ set nowritebackup
 set nowrap
 set noswapfile
 set nobackup
-set scrolloff=8
 set mouse=a
 set conceallevel=0
 set clipboard+=unnamedplus
+
+" set scrolloff=8
 
 au! BufWritePost $MYVIMRC source %

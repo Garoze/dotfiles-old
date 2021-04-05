@@ -8,6 +8,17 @@
 " Author: Garoze (.Dev)
 " Repository: https://github.com/Garoze/dotfiles
 
+let g:coc_snippet_next = '<C-l>'
+let g:coc_snippet_prev = '<C-k>'
+
+let g:coc_global_extensions = [
+    \ 'coc-emmet',
+    \ 'coc-vimlsp',
+    \ 'coc-tsserver',
+    \ 'coc-json',
+    \ 'coc-css',
+    \ 'coc-clangd' ]
+
 set hidden
 set nobackup
 set nowritebackup
@@ -43,7 +54,6 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
-
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -63,7 +73,7 @@ endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>rr <Plug>(coc-rename)
 
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)

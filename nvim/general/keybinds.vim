@@ -4,11 +4,15 @@
 "██╔═██╗ ██╔══╝    ╚██╔╝  ██╔══██╗██║██║╚██╗██║██║  ██║╚════██║  ╚██╗ ██╔╝██║██║╚██╔╝██║
 "██║  ██╗███████╗   ██║   ██████╔╝██║██║ ╚████║██████╔╝███████║██╗╚████╔╝ ██║██║ ╚═╝ ██║
 "╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝ ╚═══╝  ╚═╝╚═╝     ╚═╝
-
+" KEYBINDS.VIM - General neovim keybins (not plugin related).
+" Author: Garoze (.Dev)
+" Repository: https://github.com/Garoze/dotfiles
 
 " Set the SPACE as the leader key.
 " TODO: Ver o porque o leader key não está funcionando.
-let g:mapleader = '\<Space>'
+
+" Toggle NERDTree
+nnoremap <Leader><Tab> :NERDTreeToggle<CR>
 
 " Open a terminal in a horizontal split.
 nnoremap <C-t> :5sp<CR>:terminal<CR>GA
@@ -16,6 +20,10 @@ nnoremap <C-t> :5sp<CR>:terminal<CR>GA
 " Set the splits to below and right.
 set splitbelow
 set splitright
+
+" sneak keybinds
+nmap , <Plug>Sneak_;
+nmap m <Plug>Sneak_,
 
 " Create a new split in a given direction [ Alt + directioni ].
 nnoremap <M-l> <C-w>v
