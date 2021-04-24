@@ -8,22 +8,26 @@
 " Author: Garoze (.Dev)
 " Repository: https://github.com/Garoze/dotfiles
 
-" Set the SPACE as the leader key.
-" TODO: Ver o porque o leader key não está funcionando.
-
 " Toggle NERDTree
 nnoremap <Leader><Tab> :NERDTreeToggle<CR>
 
 " Open a terminal in a horizontal split.
 nnoremap <C-t> :5sp<CR>:terminal<CR>GA
 
-" Set the splits to below and right.
-set splitbelow
-set splitright
+" JsDoc
+vnoremap <silent><Leader>zx :'<,'>JsDoc<CR>
+
+" Fold
+nnoremap <Leader><Space> za
+vnoremap <silent><Leader><Space> :'<,'>fold<CR>
 
 " sneak keybinds
 nmap , <Plug>Sneak_;
 nmap m <Plug>Sneak_,
+
+" Set the splits to below and right.
+set splitbelow
+set splitright
 
 " Create a new split in a given direction [ Alt + directioni ].
 nnoremap <M-l> <C-w>v

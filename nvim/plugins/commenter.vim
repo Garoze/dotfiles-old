@@ -10,8 +10,8 @@
 
 filetype plugin on
 
-nmap <Leader>; <Plug>NERDCommenterToggle
-vmap <Leader>; <Plug>NERDCommenterToggle<CR>gv
+nmap <Leader>; <Plug>NERDCommenterMinimal
+vmap <Leader>; <Plug>NERDCommenterMinimal<CR>gv
 
 let g:NERDCreateDefaultMappings = 1
 let g:NERDSpaceDelims = 1

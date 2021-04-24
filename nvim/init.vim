@@ -24,13 +24,13 @@ call plug#begin(stdpath('config') . '/autoload/plugged')
     Plug 'unblevable/quick-scope'                   " quick-scope
     Plug 'preservim/nerdtree'                       " NERDTree
     Plug 'rust-lang/rust.vim'                       " Rust lang support
-    Plug 'yuezk/vim-js'                             " Javascript support (extra)
-    Plug 'HerringtonDarkholme/yats.vim'             " Typescript support (extra)
-    Plug 'maxmellon/vim-jsx-pretty'                 " JSX/TSX syntax highlight
-    Plug 'octol/vim-cpp-enhanced-highlight'         " C/CPP syntax highlight
     Plug 'junegunn/fzf.vim'                         " Fzf support on vim
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+    Plug 'jackguo380/vim-lsp-cxx-highlight'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'pangloss/vim-javascript'
+    Plug 'heavenshell/vim-jsdoc', { 'do': 'make install' }
 call plug#end()
 
 " Source plugins:
@@ -38,8 +38,9 @@ source $HOME/.config/nvim/plugins/coc.vim
 source $HOME/.config/nvim/plugins/startify.vim
 source $HOME/.config/nvim/plugins/commenter.vim
 source $HOME/.config/nvim/plugins/fzf.vim
-source $HOME/.config/nvim/plugins/cpp-syntax.vim
 source $HOME/.config/nvim/plugins/emmet.vim
+source $HOME/.config/nvim/plugins/nerd-tree.vim
+source $HOME/.config/nvim/plugins/js.vim
 " Source themes
 source $HOME/.config/nvim/themes/onedark.vim
 " Source general:

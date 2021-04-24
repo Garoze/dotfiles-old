@@ -37,3 +37,23 @@ autocmd Filetype json
             \| setlocal shiftwidth=2
             \| setlocal softtabstop=2
             \| setlocal expandtab
+
+autocmd Filetype html
+            \ setlocal tabstop=2
+            \| setlocal shiftwidth=2
+            \| setlocal softtabstop=2
+            \| setlocal expandtab
+
+autocmd Filetype css
+            \ setlocal tabstop=2
+            \| setlocal shiftwidth=2
+            \| setlocal softtabstop=2
+            \| setlocal expandtab
+
+autocmd Filetype scss
+            \ setlocal tabstop=2
+            \| setlocal shiftwidth=2
+            \| setlocal softtabstop=2
+            \| setlocal expandtab
+
+

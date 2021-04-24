@@ -1,41 +1,37 @@
 {
-    "tsserver.enable": true,
-    "tsserver.formatOnType": true,
-    "json.format.enable": true,
-    "prettier.disableSuccessMessage": true,
-    "eslint.autoFixOnSave": true,
-    "eslint.format.enable": true,
-    "eslint.probe": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "html",
-        "vue",
-        "markdown",
-        "json"
-    ],
-    "coc.preferences.formatOnType": true,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "html",
-        "markdown",
-        "json"
-    ],
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "typescript": "typescriptreact"
-    },
-    "clangd.enabled": true,
-    "clangd.path": "/home/nullsec/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
-    "languageserver": {
-        "lua": {
-            "command": "lua-lsp",
-            "filetypes": ["lua"]
-        }
+  "json.format.enable": true,
+  "tsserver.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc"
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "clangd.enabled": true,
+  "clangd.semanticHighlighting": true,
+  "clangd.path": "/home/nullsec/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
+  "languageserver": {
+    "lua": {
+      "command": "lua-lsp",
+      "filetypes": ["lua"]
     }
-
+  }
 }

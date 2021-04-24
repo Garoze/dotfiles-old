@@ -114,6 +114,7 @@ xmap <silent> <C-s> <Plug>(coc-range-select)
 command! -nargs=0 Format :call CocAction('format')
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 

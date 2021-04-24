@@ -44,8 +44,9 @@ set noswapfile
 set nobackup
 set mouse=a
 set conceallevel=0
+set scrolloff=8
 set clipboard+=unnamedplus
-
-" set scrolloff=8
+set foldlevel=99
+set nocompatible
 
 au! BufWritePost $MYVIMRC source %
